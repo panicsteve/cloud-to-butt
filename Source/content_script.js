@@ -30,6 +30,8 @@ function walk(node)
 function handleText(textNode) 
 {
 	textNode.nodeValue = textNode.nodeValue.replace(/\bthe cloud\b/gi, "my butt");
+	textNode.nodeValue = textNode.nodeValue.replace(/\bCloud\b/gi, "Butt");
+	textNode.nodeValue = textNode.nodeValue.replace(/\b.aaS\b/gi, "Ass");
 }
 
 
