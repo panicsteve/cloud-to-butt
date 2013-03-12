@@ -29,7 +29,7 @@ function walk(node)
 
 function handleText(textNode) 
 {
-	textNode.nodeValue = textNode.nodeValue.replace(/\bthe cloud\b/gi, "my butt");
+	textNode.nodeValue = textNode.nodeValue.replace(/\bThe cloud\b/g, "My butt").replace(/\bthe cloud\b/gi, "my butt");
 }
 
 
