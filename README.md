@@ -14,3 +14,8 @@ Safari Version
 --------------
 
 Can be found here: https://github.com/logancollins/cloud-to-butt-safari
+
+Firefox Version
+---------------
+
+Can be found here: https://github.com/DaveRandom/cloud-to-butt-mozilla
