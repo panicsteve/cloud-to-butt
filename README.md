@@ -24,3 +24,9 @@ Firefox Version
 ---------------
 
 Can be found here: https://github.com/DaveRandom/cloud-to-butt-mozilla
+
+
+Opera Version
+---------------
+
+Can be found here: https://github.com/DaveRandom/cloud-to-butt-opera
