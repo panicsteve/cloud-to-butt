@@ -31,10 +31,13 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-    v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-    v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+  v = v.replace(/\b(T|t)he (C|c)loud\b/g, function(match, p1, p2, offset, string) {
+    // t - 7 = m
+    // c - 1 = b
+    first = String.fromCharCode(p1.charCodeAt(0) - 7);
+    second = String.fromCharCode(p2.charCodeAt(0) - 1);
+    return first + "y " + second + "utt";
+  });
 	
 	textNode.nodeValue = v;
 }
