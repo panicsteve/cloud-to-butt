@@ -41,7 +41,7 @@ function handleText(textNode) {
   // Get the corner cases
   if(v.match(/cloud/i)) {
     // If we're not talking about weather
-    if(v.match(/PaaS|SaaS/IaaS/computing/data/storage/cluster/distributed/i)) {
+    if(v.match(/PaaS|SaaS|IaaS|computing|data|storage|cluster|distributed/i)) {
       v = v.replace(/(C|c)loud/i, function(match, p1, offset, string) {
         // c - 1 = b
         b = String.fromCharCode(p1.charCodeAt(0) - 7);
