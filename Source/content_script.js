@@ -31,12 +31,21 @@ function handleText(textNode) {
 	var v = textNode.nodeValue;
 
   // Deal with the easy case
-  v = v.replace(/\b(T|t)he (C|c)loud\b/g, function(match, p1, p2, offset, string) {
+  v = v.replace(/\b(T|t)he (C|c)loud/g, function(match, p1, p2, offset, string) {
     // t - 7 = m
     // c - 1 = b
     m = String.fromCharCode(p1.charCodeAt(0) - 7);
     b = String.fromCharCode(p2.charCodeAt(0) - 1);
     return m + "y " + b + "utt";
+  });
+
+  // Deal with private clouds
+  v = v.replace(/\b(P|p)rivate (C|c)loud/g, function(match, p1, p2, offset, string) {
+    // t - 7 = m
+    // c - 1 = b
+    y = String.fromCharCode(p1.charCodeAt(0) + 9);
+    b = String.fromCharCode(p2.charCodeAt(0) - 1);
+    return y + "our " + b + "utt";
   });
   // Get the corner cases
   if(v.match(/cloud/i)) {
