@@ -36,6 +36,11 @@ function handleText(textNode)
 	v = v.replace(/\bthe Cloud\b/g, "my Butt");
 	v = v.replace(/\bthe cloud\b/g, "my butt");
 	
+	v = v.replace(/\bCloud Computing\b/g, "Butt Computing");
+	v = v.replace(/\bCloud computing\b/g, "Butt computing");
+	v = v.replace(/\bcloud Computing\b/g, "butt Computing");
+	v = v.replace(/\bcloud computing\b/g, "butt computing");
+	
 	textNode.nodeValue = v;
 }
 
