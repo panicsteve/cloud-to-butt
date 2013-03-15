@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Cloud To Butt Plus",
-	"version": "1.0",
+	"version": "1.1",
 	"description": "Replaces the text 'the cloud' with 'my butt', as well as 'cloud' with 'butt' in certain contexts.",
 	"content_scripts": 
 	[
