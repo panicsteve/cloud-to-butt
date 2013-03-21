@@ -35,6 +35,12 @@ function handleText(textNode)
 	v = v.replace(/\bThe cloud\b/g, "My butt");
 	v = v.replace(/\bthe Cloud\b/g, "my Butt");
 	v = v.replace(/\bthe cloud\b/g, "my butt");
+	v = v.replace(/\bcloud services\b/g, "butt services")
+	v = v.replace(/\bCloud Services\b/g, "Butt Services")
+	v = v.replace(/\bCloud services\b/g, "Butt services")
+	v = v.replace(/\bcloud-based\b/g, "butt")
+	v = v.replace(/\bCloud-based\b/g, "Butt")
+	v = v.replace(/\bCloud-Based\b/g, "Butt")
 	
 	textNode.nodeValue = v;
 }
