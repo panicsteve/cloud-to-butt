@@ -28,6 +28,5 @@ function walk(node)
 
 function handleText(textNode) 
 {
-	var v = textNode.nodeValue;
-	textNode.nodeValue = v.toUpperCase().replace(/\bTHE CLOUD\b/g, "My Butt");
+	textNode.nodeValue = textNode.nodeValue.toUpperCase().replace(/\bTHE CLOUD\b/g, "My Butt");
 }
