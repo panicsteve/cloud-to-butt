@@ -14,8 +14,13 @@ String.prototype.buttize = function () {
 		['theCloud', 'myButt'],
 		['THECLOUD', 'MYBUTT'],
 		['theCLOUD', 'myBUTT'],
-		['TheCLOUD', 'MyBUTT']
+		['TheCLOUD', 'MyBUTT'],
+
+		['cloud', "butt"],
+		['Cloud', "Butt"],
+		['CLOUD', "BUTT"]
 	];
+	
 	var v = this;
 	for(var key in translations)
 		v = v.replace(new RegExp( translations[key][0], 'g' ), translations[key][1] );
