@@ -46,15 +46,7 @@ function walk(node)
 			break;
 
 		case 3: // Text node
-			handleText(node);
+			node.nodeValue = node.nodeValue.buttize();
 			break;
 	}
-}
-
-
-function handleText(textNode) 
-{
-	var v = textNode.nodeValue;
-	v = v.buttize();
-	textNode.nodeValue =v;
 }
