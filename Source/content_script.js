@@ -29,7 +29,5 @@ function walk(node)
 function handleText(textNode) 
 {
 	var v = textNode.nodeValue;
-	//don't know why the line below was repeated 3 times?
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	textNode.nodeValue = v;
+	textNode.nodeValue = v.toUpperCase().replace(/\bTHE CLOUD\b/g, "My Butt");
 }
