@@ -35,10 +35,10 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bhipsterb/g, "my internalized misconception of the youth");
-	v = v.replace(/\bHipster\b/g, "My internalized misconception of the youth"");
-	v = v.replace(/\bhipsters\b/g, "my internalized misconception of youths"");
-	v = v.replace(/\bHipstersb/g, "My internalized misconception of youths"");
+	v = v.replace(/\bhipster\b/g, "my internalized misconception of the youth");
+	v = v.replace(/\bHipster\b/g, "My internalized misconception of the youth");
+	v = v.replace(/\bhipsters\b/g, "my internalized misconception of youths");
+	v = v.replace(/\bHipsters\b/g, "My internalized misconception of youths");
 	
 	textNode.nodeValue = v;
 }
