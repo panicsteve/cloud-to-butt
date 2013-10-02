@@ -5,6 +5,10 @@ function walk(node)
 	// I stole this function from here:
 	// http://is.gd/mwZp7E
 	
+	// And I forked this from panicsteve because
+	// why reinvent the wheel and i need to learn
+	// git at some point
+	
 	var child, next;
 
 	switch ( node.nodeType )  
@@ -31,10 +35,15 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	v = v.replace(/\bhipster\b/g, "my internalized misconception of the youth");
+	v = v.replace(/\bHipster\b/g, "My internalized misconception of the youth");
+	v = v.replace(/\bhipsters\b/g, "my internalized misconception of youths");
+	v = v.replace(/\bHipsters\b/g, "My internalized misconception of youths");
+	
+	v = v.replace(/\bmillennial\b/g, "my internalized misconception of the youth");
+	v = v.replace(/\bMillennial\b/g, "My internalized misconception of the youth");
+	v = v.replace(/\bmillennials\b/g, "my internalized misconception of youths");
+	v = v.replace(/\bMillennials\b/g, "My internalized misconception of youths");
 	
 	textNode.nodeValue = v;
 }
