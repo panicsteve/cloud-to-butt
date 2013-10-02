@@ -40,6 +40,11 @@ function handleText(textNode)
 	v = v.replace(/\bhipsters\b/g, "my internalized misconception of youths");
 	v = v.replace(/\bHipsters\b/g, "My internalized misconception of youths");
 	
+	v = v.replace(/\bmillennial\b/g, "my internalized misconception of the youth");
+	v = v.replace(/\bMillennial\b/g, "My internalized misconception of the youth");
+	v = v.replace(/\bmillennials\b/g, "my internalized misconception of youths");
+	v = v.replace(/\bMillennials\b/g, "My internalized misconception of youths");
+	
 	textNode.nodeValue = v;
 }
 
