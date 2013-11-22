@@ -36,6 +36,13 @@ function handleText(textNode)
 	v = v.replace(/\bthe Cloud\b/g, "my Butt");
 	v = v.replace(/\bthe cloud\b/g, "my butt");
 	
+	//big data to heavy D conversion
+	//to address issue: https://github.com/panicsteve/cloud-to-butt/issues/26
+	v = v.replace(/\big data\b/g, "heavy D");
+	v = v.replace(/\big Data\b/g, "heavy D");
+	v = v.replace(/\Big data\b/g, "Heavy D");
+	v = v.replace(/\Big Data\b/g, "Heavy D");
+	
 	textNode.nodeValue = v;
 }
 
