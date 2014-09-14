@@ -6,6 +6,11 @@ function walk(node)
 	// http://is.gd/mwZp7E
 	
 	var child, next;
+	
+	if (['input', 'textarea'].indexOf(node.tagName.toLowerCase()) > -1
+	    || node.classList.indexOf('ace_editor') > -1) {
+		break;
+	}
 
 	switch ( node.nodeType )  
 	{
