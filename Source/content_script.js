@@ -22,7 +22,9 @@ function walk(node)
 			break;
 
 		case 3: // Text node
-			handleText(node);
+			if(node.parentElement.tagName.toLowerCase() != "script") {
+				handleText(node);
+			}
 			break;
 	}
 }
