@@ -33,12 +33,10 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\ban SJW\b/g, "a skeleton");
-	v = v.replace(/\ban sjw\b/g, "a skeleton");
-	v = v.replace(/\bSJW\b/g, "skeleton");
-	v = v.replace(/\bsjw\b/g, "skeleton");
-	v = v.replace(/\bSJWs\b/g, "skeletons");
-	v = v.replace(/\bsjws\b/g, "skeletons");
+	v = v.replace(/\bsjw\b/ig, "skeleton");
+	v = v.replace(/\bsjws\b/ig, "skeletons");
+	v = v.replace(/\bAn skeleton(s?)\b/g, "A skeleton$1");
+	v = v.replace(/\ban skeleton(s?)\b/g, "a skeleton$1");
 	
 	textNode.nodeValue = v;
 }
