@@ -33,6 +33,8 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
+	v = v.replace(/\ban SJW\b/g, "a skeleton");
+	v = v.replace(/\ban sjw\b/g, "a skeleton");
 	v = v.replace(/\bSJW\b/g, "skeleton");
 	v = v.replace(/\bsjw\b/g, "skeleton");
 	v = v.replace(/\bSJWs\b/g, "skeletons");
