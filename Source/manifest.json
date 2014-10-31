@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "SJW to Skeleton",
-	"version": "1.4",
+	"version": "1.5",
 	"description": "Replaces the text 'SJW' with 'skeleton'.",
 	"icons": { 
 		"16": "icons/icon16.png",

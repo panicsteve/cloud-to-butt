@@ -41,26 +41,25 @@ function walk(node)
 			break;
 
 		case 3: // Text node
-			if(node.parentElement.tagName.toLowerCase() != "script") {
-				handleText(node);
-			}
+			handleText(node);
 			break;
 	}
 }
 
 function handleText(textNode) 
 {
+	if (textNode.parentElement.tagName.toLowerCase() === "script" || textNode.parentElement.isContentEditable === true) {
+		return false;
+	}
+
 	var oldValue = textNode.nodeValue;
 	var v = oldValue;
 
-	v = v.replace(/\bsjw\b/ig, "skeleton");
-	v = v.replace(/\bsjws\b/ig, "skeletons");
-	v = v.replace(/\bAn skeleton(s?)\b/g, "A skeleton$1");
-	v = v.replace(/\ban skeleton(s?)\b/g, "a skeleton$1");
+	v = v.replace(/\bsjw(s?)\b/ig, "skeleton$1");
+	v = v.replace(/\b(a)n (skeletons?)\b/ig, "$1 $2");
+	v = v.replace(/\b(s)ocial justice (warriors?)/ig, "$1keleton $2");
 	
 	if (v !== oldValue) {
 		textNode.nodeValue = v;
 	}
 }
-
-
