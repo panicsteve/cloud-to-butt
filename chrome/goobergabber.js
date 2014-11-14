@@ -51,7 +51,6 @@ function walk(node)
 function getGWord(includeCapitalG)
 {
 	gWord = gWordArray[Math.floor(Math.random() * gWordArray.length)];
-	console.log(gWordArray.length);
 
 	if (includeCapitalG)
 		gWord = "G" + gWord;
