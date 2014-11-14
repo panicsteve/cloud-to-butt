@@ -1,1 +1,3 @@
-https://chrome.google.com/webstore/detail/sjw-to-skeleton/kckodmjikeoncekpplppkkcjolofmacc
+# Readme
+
+Work in progress
