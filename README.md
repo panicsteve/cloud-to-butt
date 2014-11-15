@@ -8,7 +8,7 @@ Also replaces occurrances of 'GamerGater' with 'Alligator'.
 
 #Contact
 
-Suggestions for words? Feel free to make a pull request, or tweet @spiltcoffee.
+Suggestions for words? Feel free to make a pull request, or tweet [@spiltcoffee](https://twitter.com/spiltcoffee).
 
 #Licensed Material
 
