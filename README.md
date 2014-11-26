@@ -1,37 +1,15 @@
-cloud-to-butt
-=============
+# Readme
 
-Chrome extension that replaces occurrences of 'the cloud' with 'my butt'
+Chrome extension that replaces occurrences of 'GamerGate' with two random words starting with G.
 
-[Direct download of crx file](https://github.com/panicsteve/cloud-to-butt/blob/master/CloudToButt.crx?raw=true)
+Also replaces occurrances of 'GamerGater' with 'Alligator'.
 
-Note that there are forks of this extension that simply replace 'cloud' with 'butt'.
-In my personal opinion, that approach is too broad and it's less funny as a result, but it is clearly a very
-polarizing issue in the cloud-to-butt user community.  Forks are free to do whatever they like.  But officially, _this_
-extension replaces only the phrase described above. Thank you for your concern.
+###[Chrome Extension available here](https://chrome.google.com/webstore/detail/efeahgomdginngpicicpkkbmgmcjembl)
 
-Screenshot Gallery
-------------------
+#Contact
 
-http://www.flickr.com/groups/cloud-to-butt/
+Suggestions for words? Feel free to make a pull request, or tweet [@spiltcoffee](https://twitter.com/spiltcoffee).
 
-Installation
-------------
+#Licensed Material
 
-In Chrome, choose Window > Extensions.  Drag CloudToButt.crx into the page that appears.
-
-Safari Version
---------------
-
-Can be found here: https://github.com/logancollins/cloud-to-butt-safari
-
-Firefox Version
----------------
-
-Can be found here: https://github.com/DaveRandom/cloud-to-butt-mozilla
-
-
-Opera Version
----------------
-
-Can be found here: https://github.com/DaveRandom/cloud-to-butt-opera
+Icon made by [Roundicons](http://www.smashingmagazine.com/2014/11/13/free-hand-drawn-doodle-icon-set-100-icons-png-psd-svg/). Lisence is [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/). Icons have been resized for use in the extension.
