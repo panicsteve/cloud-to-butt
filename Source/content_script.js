@@ -7,7 +7,7 @@ function walk(node)
 	
 	var child, next;
 	
-	if (['input', 'textarea'].indexOf(node.tagName.toLowerCase()) > -1
+	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
 	    || node.classList.indexOf('ace_editor') > -1) {
 		break;
 	}
