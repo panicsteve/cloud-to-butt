@@ -6,10 +6,10 @@ Chrome extension that reveals the *real* truth behind Millennials.
 ## Installation
 
 1. Download the extension [here](https://github.com/ericwbailey/millennial-to-snake-people/archive/master.zip), or use the "Download Zip" button on this page.
-- Unzip the the downloaded `millennial-to-snake-people-master.zip` file and open up the folder it creates
+- Unzip the the downloaded `millennialss-to-snake-people-master.zip` file and open up the folder it creates
 - In [Chrome](https://www.google.com/chrome/), open `Window > Extensions` from the toolbar menu
 - Drag and release `MillennialToSnakePeople.crx` over the open Extensions tab. The tab should say "Drop to install" before letting go
-- A popup message reading "Add 'Millennial to Snake People'?" should appear. Click Add, then close the Extensions tab. You can also delete the unzipped folder and its contents, if you'd like
+- A popup message reading "Add 'Millennials to Snake People'?" should appear. Click Add, then close the Extensions tab. You can also delete the unzipped folder and its contents, if you'd like
 - [Free your mind](https://www.google.com/search?q=Millennials)
 
 
