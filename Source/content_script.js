@@ -101,6 +101,10 @@ function handleText(textNode)
 	v = v.replace(/\bWe Generation\b/g, "Cult of the Caduceus ");
 	v = v.replace(/\bwe generation\b/g, "cult of the caduceus ");
 
+  // Generation Me
+  v = v.replace(/\bGeneration Me\b/g, "The Cult of the Serpent");
+  v = v.replace(/\bgeneration me\b/g, "the cult of the serpent");
+
 	// Global Generation
 	v = v.replace(/\bGlobal Generation\b/g, "Tannin's Horde");
 	v = v.replace(/\bglobal generation\b/g, "Tannin's horde");
