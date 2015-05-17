@@ -16,6 +16,10 @@ Chrome extension that reveals the *real* truth behind Millennials.
 - [Free your mind](https://www.google.com/search?q=Millennials)
 
 
+## Also
+Follow [@snakepeople_bot](https://twitter.com/snakepeople_bot) on Twitter, courtesy of [jimkang](https://github.com/jimkang)'s [hail-ants-bot](https://github.com/jimkang/hail-ants-bot)
+
+
 ## Screenshots
 
 ### Installed Chrome Extension
