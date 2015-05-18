@@ -3,6 +3,7 @@
 
 	"name": "Millennials to Snake People",
 	"description": "Replaces the text 'Millennial' with 'Snake People'.",
+	"author": "Eric Bailey", 
 	"version": "1.0",
 
 	"icons": {
