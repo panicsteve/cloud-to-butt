@@ -73,10 +73,8 @@ function handleText(textNode)
 	v = v.replace(/\btrophy kids'\b/g, "Quetzalcoatl's chosen's");
 
 	// Digital Natives
-	v = v.replace(/\bDigital Native\b/g, "Parseltongue");
-	v = v.replace(/\bDigital Natives\b/g, "Parseltongues");
-	v = v.replace(/\bdigital native\b/g, "parseltongue");
-	v = v.replace(/\bdigital natives\b/g, "parseltongues");
+	v = v.replace(/\bDigital Native(s)?\b/g, "Parseltongue$1");
+	v = v.replace(/\bdigital native(s)?\b/g, "parseltongue$1");
 
 	// Generation Y
 	v = v.replace(/\bGeneration Y\b/g, "Serpent Society");
