@@ -97,8 +97,8 @@ function handleText(textNode)
 	// Generation We
 	v = v.replace(/\bGeneration We\b/g, "Caduceus Cult");
 	v = v.replace(/\bgeneration we\b/g, "caduceus cult");
-	v = v.replace(/\bWe Generation\b/g, "Cult of the Caduceus ");
-	v = v.replace(/\bwe generation\b/g, "cult of the caduceus ");
+	v = v.replace(/\bWe Generation\b/g, "Cult of the Caduceus");
+	v = v.replace(/\bwe generation\b/g, "cult of the caduceus");
 
     // Generation Me
     v = v.replace(/\bGeneration Me\b/g, "The Cult of the Serpent");
