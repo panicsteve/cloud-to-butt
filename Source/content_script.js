@@ -31,6 +31,16 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
+	// Millennial Generation
+	v = v.replace(
+		/\b(?:Millennial Generation)|(?:Generation Millennial)\b/g,
+		"Plissken Faction"
+	);
+	v = v.replace(
+		/\b(?:millennial generation)|(?:generation millennial)\b/g,
+		"Plissken faction"
+	);
+
 	// Millennial
 	v = v.replace(/\bMillennial\b/g, "Snake Person");
 	v = v.replace(/\bmillennial\b/g, "snake person");
@@ -50,15 +60,16 @@ function handleText(textNode)
 	v = v.replace(/\bgreat depression\b/g, "clutch plague");
 
 	// Occupy Wall Street
-	v = v.replace(/\bOccupy Wall Street\b/g, "Great Ape-Snake War");
-	v = v.replace(/\boccupy wall street\b/g, "great ape-snake war");
-	v = v.replace(/\bOccupy Movement\b/g, "Great Ape-Snake War");
-	v = v.replace(/\boccupy movement\b/g, "great ape-snake war");
-	v = v.replace(/\bOWS Movement\b/g, "Great Ape-Snake War");
-	v = v.replace(/\bOWS movement\b/g, "great ape-snake war");
-	v = v.replace(/\bows movement\b/g, "great ape-snake war");
-	v = v.replace(/\b ows \b/g, " ga-sw ");
+	v = v.replace(
+		/\b(?:(?:Occupy|OWS) Movement)|(?:Occupy Wall Street)\b/g,
+		"Great Ape-Snake War"
+	);
+	v = v.replace(
+		/\b(?:(?:occupy|OWS|ows) movement)|(?:occupy wall street)\b/g,
+		"great ape-snake war"
+	);
 	v = v.replace(/\b OWS \b/g, " GA-SW ");
+	v = v.replace(/\b ows \b/g, " ga-sw ");
 
 	// Helicopter Parents
 	v = v.replace(/\bHelicopter Parents\b/g, "Thulsa Doom");
@@ -77,20 +88,10 @@ function handleText(textNode)
 	v = v.replace(/\bdigital native(s)?\b/g, "parseltongue$1");
 
 	// Generation Y
-	v = v.replace(/\bGeneration Y\b/g, "Serpent Society");
-	v = v.replace(/\bgeneration y\b/g, "serpent society");
+	v = v.replace(/\b(?:G(?:eneration )?Y)|(?:Generation Why)\b/g,
+		"Serpent Society");
+	v = v.replace(/\bgen(?:eration)? ?(?:wh)?y\b/g, "serpent society");
 	v = v.replace(/\bGen Y\b/g, "Society of the Serpent");
-	v = v.replace(/\bgen y\b/g, "serpent society");
-	v = v.replace(/\bGenY\b/g, "Serpent Society");
-	v = v.replace(/\bgeny\b/g, "serpent society");
-	v = v.replace(/\bGeneration Why\b/g, "Serpent Society");
-	v = v.replace(/\bgeneration why\b/g, "serpent society");
-
-	// Millennial Generation
-	v = v.replace(/\bMillennial Generation\b/g, "Plissken Faction");
-	v = v.replace(/\bmillennial generation\b/g, "Plissken faction");
-	v = v.replace(/\bGeneration Millennial\b/g, "Plissken Faction");
-	v = v.replace(/\bgeneration millennial\b/g, "Plissken faction");
 
 	// Generation We
 	v = v.replace(/\bGeneration We\b/g, "Caduceus Cult");
@@ -98,9 +99,9 @@ function handleText(textNode)
 	v = v.replace(/\bWe Generation\b/g, "Cult of the Caduceus");
 	v = v.replace(/\bwe generation\b/g, "cult of the caduceus");
 
-    // Generation Me
-    v = v.replace(/\bGeneration Me\b/g, "The Cult of the Serpent");
-    v = v.replace(/\bgeneration me\b/g, "the cult of the serpent");
+	// Generation Me
+	v = v.replace(/\bGeneration Me\b/g, "The Cult of the Serpent");
+	v = v.replace(/\bgeneration me\b/g, "the cult of the serpent");
 
 	// Global Generation
 	v = v.replace(/\bGlobal Generation\b/g, "Tannin's Horde");
@@ -129,10 +130,8 @@ function handleText(textNode)
 	v = v.replace(/\bnew Boomers'\b/g, "Jörmungandr's circle's");
 
 	// Generation Flux
-	v = v.replace(/\bGeneration Flux\b/g, "Hiss Club");
-	v = v.replace(/\bgeneration flux\b/g, "hiss club");
-	v = v.replace(/\bFlux Generation\b/g, "Hiss Club");
-	v = v.replace(/\bflux generation\b/g, "hiss club");
+	v = v.replace(/\b(?:Generation Flux)|(?:Flux Generation)\b/g, "Hiss Club");
+	v = v.replace(/\b(?:generation flux)|(?:flux generation)\b/g, "hiss club");
 
 	// Generation Sell
 	v = v.replace(/\bGeneration Sell\b/g, "Kaa Tribe");
@@ -141,48 +140,49 @@ function handleText(textNode)
 	v = v.replace(/\bsell generation\b/g, "tribe of Kaa");
 
 	// Boomerang Generation
-	v = v.replace(/\bBoomerang Generation\b/g, "Ouroboros Society");
-	v = v.replace(/\bboomerang generation\b/g, "ouroboros society");
-	v = v.replace(/\bGeneration Boomerang\b/g, "Ouroboros Society");
-	v = v.replace(/\bgeneration boomerang\b/g, "ouroboros society");
+	v = v.replace(
+		/\b(?:Boomerang Generation)|(?:Generation Boomerang)\b/g,
+		"Ouroboros Society"
+	);
+	v = v.replace(
+		/\b(?:boomerang generation)|(?:generation boomerang)\b/g,
+		"ouroboros society"
+	);
 
 	// Peter Pan Generation
 	v = v.replace(/\bPeter Pan Generation\b/g, "Neheb-Kau Cult");
-	v = v.replace(/\bPeter Pan generation\b/g, "Neheb-Kau cult");
-	v = v.replace(/\bpeter pan generation\b/g, "Neheb-Kau cult");
+	v = v.replace(/\b(?:P|p)eter (?:P|p)an generation\b/g, "Neheb-Kau cult");
 	v = v.replace(/\bGeneration Peter Pan\b/g, "Cult of Neheb-Kau");
-	v = v.replace(/\bgeneration Peter Pan\b/g, "cult of Neheb-Kau");
-	v = v.replace(/\bgeneration peter pan\b/g, "cult of Neheb-Kau");
+	v = v.replace(/\bgeneration (?:P|p)eter (?:P|p)an\b/g, "cult of Neheb-Kau");
 
 	// Generation 911
-	v = v.replace(/\bGeneration 9\/11\b/g, "Kaa Tribe");
-	v = v.replace(/\bGeneration 911\b/g, "Kaa Tribe");
-	v = v.replace(/\bgeneration 9\/11\b/g, "Kaa tribe");
-	v = v.replace(/\bgeneration 911\b/g, "Kaa tribe");
-	v = v.replace(/\b9\/11 Generation\b/g, "Tribe of the Kaa");
-	v = v.replace(/\b9\/11 generation\b/g, "tribe of the Kaa");
-	v = v.replace(/\bGen 9\/11\b/g, "Kaa Tribe");
-	v = v.replace(/\bgen 9\/11\b/g, "Kaa tribe");
-	v = v.replace(/\bGen 911\b/g, "Kaa Tribe");
-	v = v.replace(/\bgen 911\b/g, "Kaa tribe");
+	v = v.replace(/\bGen(?:eration)? 9\/?11\b/g, "Kaa Tribe");
+	v = v.replace(/\bgen(?:eration)? 9\/?11\b/g, "Kaa tribe");
+	v = v.replace(/\b9\/?11 Generation\b/g, "Tribe of the Kaa");
+	v = v.replace(/\b9\/?11 generation\b/g, "tribe of the Kaa");
 
 	// The Generation of €700
-	v = v.replace(/\bThe Generation of €700\b/g, "Ophion");
-	v = v.replace(/\bthe generation of €700\b/g, "ophion");
-	v = v.replace(/\b€700 Generation\b/g, "Ophion");
-	v = v.replace(/\b€700 generation\b/g, "ophion");
+	v = v.replace(
+		/\b(?:The Generation of €700)|(?:€700 Generation)\b/g,
+		"Ophion"
+	);
+	v = v.replace(
+		/\b(?:the generation of €700)|(?:€700 generation)\b/g,
+		"ophion"
+	);
 
 	// Mileurista
-	v = v.replace(/\bMileurista\b/g, "Nagual");
-	v = v.replace(/\bmileurista\b/g, "Nagual");
-	v = v.replace(/\bMilleurista\b/g, "Nagual");
-	v = v.replace(/\bmilleurista\b/g, "Nagual");
+	v = v.replace(/\b(?:M|m)ill?eurista\b/g, "Nagual");
 
 	// Precarious Generation
-	v = v.replace(/\bPrecarious Generation\b/g, "Gargouille");
-	v = v.replace(/\bprecarious generation\b/g, "gargouille");
-	v = v.replace(/\bGeneration Precarious\b/g, "Gargouille");
-	v = v.replace(/\bgeneration precarious\b/g, "gargouille");
+	v = v.replace(
+		/\b(?:Precarious Generation)|(?:Generation Precarious)\b/g,
+		"Gargouille"
+	);
+	v = v.replace(
+		/\b(?:precarious generation)|(?:generation precarious)\b/g,
+		"gargouille"
+	);
 
 	textNode.nodeValue = v;
 }
