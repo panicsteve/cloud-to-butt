@@ -59,7 +59,6 @@ function handleText(textNode)
 	v = v.replace(/\bows movement\b/g, "great ape-snake war");
 	v = v.replace(/\b ows \b/g, "ga-sw");
 	v = v.replace(/\b OWS \b/g, "GA-SW");
-	v = v.replace(/\b ows \b/g, "ga-sw");
 
 	// Helicopter Parents
 	v = v.replace(/\bHelicopter Parents\b/g, "Thulsa Doom");
