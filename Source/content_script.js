@@ -1,19 +1,19 @@
 walk(document.body);
 
-function walk(node) 
+function walk(node)
 {
 	// I stole this function from here:
 	// http://is.gd/mwZp7E
 	
 	var child, next;
 
-	switch ( node.nodeType )  
+	switch ( node.nodeType )
 	{
 		case 1:  // Element
 		case 9:  // Document
 		case 11: // Document fragment
 			child = node.firstChild;
-			while ( child ) 
+			while ( child )
 			{
 				next = child.nextSibling;
 				walk(child);
@@ -27,7 +27,7 @@ function walk(node)
 	}
 }
 
-function handleText(textNode) 
+function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
@@ -38,8 +38,8 @@ function handleText(textNode)
 	v = v.replace(/\bmillennials\b/g, "snake people");
 	v = v.replace(/\bMillennials'\b/g, "Snake People's");
 	v = v.replace(/\bmillennials'\b/g, "snake people's");
-	v = v.replace(/\bMillienials\b/g, "Snake People"); 		// Common misspelling
-	v = v.replace(/\bmillienials\b/g, "snake people"); 	 	// Common misspelling
+	v = v.replace(/\bMillienials\b/g, "Snake People");		// Common misspelling
+	v = v.replace(/\bmillienials\b/g, "snake people");		// Common misspelling
 
 	// The Great Recession 
 	v = v.replace(/\bGreat Recession\b/g, "Time of Shedding and Cold Rocks");
@@ -101,9 +101,9 @@ function handleText(textNode)
 	v = v.replace(/\bWe Generation\b/g, "Cult of the Caduceus ");
 	v = v.replace(/\bwe generation\b/g, "cult of the caduceus ");
 
-    // Generation Me
-    v = v.replace(/\bGeneration Me\b/g, "The Cult of the Serpent");
-    v = v.replace(/\bgeneration me\b/g, "the cult of the serpent");
+	// Generation Me
+	v = v.replace(/\bGeneration Me\b/g, "The Cult of the Serpent");
+	v = v.replace(/\bgeneration me\b/g, "the cult of the serpent");
 
 	// Global Generation
 	v = v.replace(/\bGlobal Generation\b/g, "Tannin's Horde");
@@ -189,5 +189,3 @@ function handleText(textNode)
 
 	textNode.nodeValue = v;
 }
-
-
