@@ -152,9 +152,9 @@ function handleText(textNode)
 	v = v.replace(/\bPeter Pan Generation\b/g, "Neheb-Kau Cult");
 	v = v.replace(/\bPeter Pan generation\b/g, "Neheb-Kau cult");
 	v = v.replace(/\bpeter pan generation\b/g, "Neheb-Kau cult");
-	v = v.replace(/\bGeneration Peter Pan\b/g, "Neheb-Kau Cult");
-	v = v.replace(/\bgeneration Peter Pan\b/g, "Neheb-Kau cult");
-	v = v.replace(/\bgeneration peter pan\b/g, "Neheb-Kau cult");
+	v = v.replace(/\bGeneration Peter Pan\b/g, "Cult of Neheb-Kau");
+	v = v.replace(/\bgeneration Peter Pan\b/g, "cult of Neheb-Kau");
+	v = v.replace(/\bgeneration peter pan\b/g, "cult of Neheb-Kau");
 
 	// Generation 911
 	v = v.replace(/\bGeneration 9\/11\b/g, "Kaa Tribe");
