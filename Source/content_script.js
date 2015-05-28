@@ -65,15 +65,15 @@ function handleText(textNode)
 
 	// Occupy Wall Street
 	v = v.replace(
-		/\b(?:(?:Occupy|OWS) Movement)|(?:Occupy Wall Street)\b/g,
+		/\b(?:(?:Occupy|OWS) (?:M|m)ovement)|(?:Occupy Wall Street)\b/g,
 		"Great Ape-Snake War"
 	);
 	v = v.replace(
 		/\b(?:(?:occupy|OWS|ows) movement)|(?:occupy wall street)\b/g,
 		"great ape-snake war"
 	);
-	v = v.replace(/\b OWS \b/g, " GA-SW ");
-	v = v.replace(/\b ows \b/g, " ga-sw ");
+	v = v.replace(/\bOWS\b/g, "GA-SW");
+	v = v.replace(/\bows\b/g, "ga-sw");
 
 	// Helicopter Parents
 	v = v.replace(/\bHelicopter Parents\b/g, "Thulsa Doom");
