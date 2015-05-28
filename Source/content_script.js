@@ -92,7 +92,7 @@ function handleText(textNode)
 	v = v.replace(/\bdigital native(s)?\b/g, "parseltongue$1");
 
 	// Generation Y
-	v = v.replace(/\b(?:G(?:eneration )?Y)|(?:Generation Why)\b/g,
+	v = v.replace(/\b(?:Generation Y)|(?:Generation Why)\b/g,
 		"Serpent Society");
 	v = v.replace(/\bgen(?:eration)? ?(?:wh)?y\b/g, "serpent society");
 	v = v.replace(/\bGen Y\b/g, "Society of the Serpent");
