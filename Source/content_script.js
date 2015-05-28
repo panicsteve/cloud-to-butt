@@ -31,6 +31,12 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
+	// Fix some misspellings
+	v = v.replace(/\b(M|m)illienial(s)?\b/g, "$1illennial$2");
+	v = v.replace(/\b(M|m)illenial(s)?\b/g, "$1illennial$2");
+	v = v.replace(/\b(M|m)ilennial(s)?\b/g, "$1illennial$2");
+	v = v.replace(/\b(M|m)ilenial(s)?\b/g, "$1illennial$2");
+
 	// Millennial
 	v = v.replace(/\bMillennial\b/g, "Snake Person");
 	v = v.replace(/\bmillennial\b/g, "snake person");
@@ -38,8 +44,6 @@ function handleText(textNode)
 	v = v.replace(/\bmillennials\b/g, "snake people");
 	v = v.replace(/\bMillennials'\b/g, "Snake People's");
 	v = v.replace(/\bmillennials'\b/g, "snake people's");
-	v = v.replace(/\bMillienials\b/g, "Snake People");		// Common misspelling
-	v = v.replace(/\bmillienials\b/g, "snake people");		// Common misspelling
 
 	// The Great Recession 
 	v = v.replace(/\bGreat Recession\b/g, "Time of Shedding and Cold Rocks");
