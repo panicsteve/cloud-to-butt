@@ -37,6 +37,12 @@ function handleText(textNode)
 	v = v.replace(/\b(M|m)ilennial(s)?\b/g, "$1illennial$2");
 	v = v.replace(/\b(M|m)ilenial(s)?\b/g, "$1illennial$2");
 
+	// Millennial Generation
+	v = v.replace(/\bMillennial Generation\b/g, "Plissken Faction");
+	v = v.replace(/\bmillennial generation\b/g, "Plissken faction");
+	v = v.replace(/\bGeneration Millennial\b/g, "Plissken Faction");
+	v = v.replace(/\bgeneration millennial\b/g, "Plissken faction");
+
 	// Millennial
 	v = v.replace(/\bMillennial\b/g, "Snake Person");
 	v = v.replace(/\bmillennial\b/g, "snake person");
@@ -92,12 +98,6 @@ function handleText(textNode)
 	v = v.replace(/\bgeny\b/g, "serpent society");
 	v = v.replace(/\bGeneration Why\b/g, "Serpent Society");
 	v = v.replace(/\bgeneration why\b/g, "serpent society");
-
-	// Millennial Generation
-	v = v.replace(/\bMillennial Generation\b/g, "Plissken Faction");
-	v = v.replace(/\bmillennial generation\b/g, "Plissken faction");
-	v = v.replace(/\bGeneration Millennial\b/g, "Plissken Faction");
-	v = v.replace(/\bgeneration millennial\b/g, "Plissken faction");
 
 	// Generation We
 	v = v.replace(/\bGeneration We\b/g, "Caduceus Cult");
