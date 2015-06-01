@@ -5,7 +5,6 @@
     "short_name": "Snake People",
 	"description": "Replaces the text 'Millennial' with 'Snake People'.",
 	"author": "Eric Bailey",
-    "default_locale": "en",
 	"version": "1.1",
 
 	"icons": {
