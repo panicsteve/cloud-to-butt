@@ -1,5 +1,7 @@
 walk(document.body);
 
+document.title = replaceText(document.title);
+
 function walk(node)
 {
 	// I stole this function from here:
@@ -27,10 +29,12 @@ function walk(node)
 	}
 }
 
-function handleText(textNode)
-{
-	var v = textNode.nodeValue;
+function handleText(textNode) {
+  textNode.nodeValue = replaceText(textNode.nodeValue);
+}
 
+function replaceText(v)
+{
 	// Fix some misspellings
 	v = v.replace(/\b(M|m)illienial(s)?\b/g, "$1illennial$2");
 	v = v.replace(/\b(M|m)illenial(s)?\b/g, "$1illennial$2");
@@ -188,5 +192,5 @@ function handleText(textNode)
 		"gargouille"
 	);
 
-	textNode.nodeValue = v;
+	return v;
 }
