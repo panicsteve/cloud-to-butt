@@ -4,7 +4,7 @@ function walk(node)
 {
 	// I stole this function from here:
 	// http://is.gd/mwZp7E
-	
+
 	var child, next;
 
 	switch ( node.nodeType )
@@ -55,7 +55,7 @@ function handleText(textNode)
 	v = v.replace(/\bMillennials'\b/g, "Snake People's");
 	v = v.replace(/\bmillennials'\b/g, "snake people's");
 
-	// The Great Recession 
+	// The Great Recession
 	v = v.replace(/\bGreat Recession\b/g, "Time of Shedding and Cold Rocks");
 	v = v.replace(/\bgreat recession\b/g, "time of shedding and cold rocks");
 
