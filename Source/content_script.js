@@ -1,3 +1,11 @@
+var documentTitle = document.getElementsByTagName('title')[0],
+	mutationConfig = {
+		characterData: true,
+		childList: true,
+		subtree: true
+	},
+	bodyObserver, titleObserver;
+
 function walk(rootNode)
 {
 	// Find all the text nodes in rootNode
@@ -181,6 +189,31 @@ function replaceText(v)
 	return v;
 }
 
-// Replace text in the document body and title
+// The callback used for the document body and title observers
+function observerCallback(mutations) {
+	var i;
+
+	mutations.forEach(function(mutation) {
+		for (i = 0; i < mutation.addedNodes.length; i++) {
+			if (mutation.addedNodes[i].nodeType === 3) {
+				// Replace the text for text nodes
+				handleText(mutation.addedNodes[i]);
+			} else {
+				// Otherwise, find text nodes within the given node and replace text
+				walk(mutation.addedNodes[i]);
+			}
+		}
+	});
+}
+
+// Do the inital text replacements in the document body and title
 walk(document.body);
 document.title = replaceText(document.title);
+
+// Observe the body so that we replace text in any added/modified nodes
+bodyObserver = new MutationObserver(observerCallback);
+bodyObserver.observe(document.body, mutationConfig);
+
+// Observe the title so we can handle any modifications there
+titleObserver = new MutationObserver(observerCallback);
+titleObserver.observe(documentTitle, mutationConfig);
