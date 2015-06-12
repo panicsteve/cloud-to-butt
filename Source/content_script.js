@@ -1,5 +1,5 @@
 var documentTitle = document.getElementsByTagName('title')[0],
-	mutationConfig = {
+	observerConfig = {
 		characterData: true,
 		childList: true,
 		subtree: true
@@ -212,8 +212,8 @@ document.title = replaceText(document.title);
 
 // Observe the body so that we replace text in any added/modified nodes
 bodyObserver = new MutationObserver(observerCallback);
-bodyObserver.observe(document.body, mutationConfig);
+bodyObserver.observe(document.body, observerConfig);
 
 // Observe the title so we can handle any modifications there
 titleObserver = new MutationObserver(observerCallback);
-titleObserver.observe(documentTitle, mutationConfig);
+titleObserver.observe(documentTitle, observerConfig);
