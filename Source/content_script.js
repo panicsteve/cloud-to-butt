@@ -1,7 +1,3 @@
-walk(document.body);
-
-document.title = replaceText(document.title);
-
 function walk(rootNode)
 {
 	// Find all the text nodes in rootNode
@@ -184,3 +180,7 @@ function replaceText(v)
 
 	return v;
 }
+
+// Replace text in the document body and title
+walk(document.body);
+document.title = replaceText(document.title);
