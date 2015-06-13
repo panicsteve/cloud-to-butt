@@ -1,10 +1,4 @@
-var documentTitle = document.getElementsByTagName('title')[0],
-	observerConfig = {
-		characterData: true,
-		childList: true,
-		subtree: true
-	},
-	bodyObserver, titleObserver;
+var iframes, i;
 
 function walk(rootNode)
 {
@@ -206,14 +200,38 @@ function observerCallback(mutations) {
 	});
 }
 
-// Do the inital text replacements in the document body and title
-walk(document.body);
-document.title = replaceText(document.title);
+/* Walk the doc (document) body, replace the title, and observe the body
+   and title */
+function walkAndObserve(doc) {
+	var docTitle = doc.getElementsByTagName('title')[0],
+	observerConfig = {
+		characterData: true,
+		childList: true,
+		subtree: true
+	},
+	bodyObserver, titleObserver;
 
-// Observe the body so that we replace text in any added/modified nodes
-bodyObserver = new MutationObserver(observerCallback);
-bodyObserver.observe(document.body, observerConfig);
+	// Do the inital text replacements in the document body and title
+	walk(doc.body);
+	doc.title = replaceText(doc.title);
 
-// Observe the title so we can handle any modifications there
-titleObserver = new MutationObserver(observerCallback);
-titleObserver.observe(documentTitle, observerConfig);
+	// Observe the body so that we replace text in any added/modified nodes
+	bodyObserver = new MutationObserver(observerCallback);
+	bodyObserver.observe(doc.body, observerConfig);
+
+	// Observe the title so we can handle any modifications there
+	if (docTitle) {
+		titleObserver = new MutationObserver(observerCallback);
+		titleObserver.observe(docTitle, observerConfig);
+	}
+}
+walkAndObserve(document);
+
+// Collect the iframes and replace text in each like we do with the document
+iframes = document.getElementsByTagName('iframe');
+for (i = 0; i < iframes.length; i++) {
+	if (iframes[i].src.match('^https?://' + document.domain)) {
+		// Walk and observe the iframe if it's the same origin as the page
+		walkAndObserve(iframes[i].contentWindow.document);
+	}
+}
