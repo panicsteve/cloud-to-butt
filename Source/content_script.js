@@ -1,5 +1,3 @@
-var iframes, i;
-
 function walk(rootNode)
 {
 	// Find all the text nodes in rootNode
@@ -226,12 +224,3 @@ function walkAndObserve(doc) {
 	}
 }
 walkAndObserve(document);
-
-// Collect the iframes and replace text in each like we do with the document
-iframes = document.getElementsByTagName('iframe');
-for (i = 0; i < iframes.length; i++) {
-	if (iframes[i].src.match('^https?://' + document.domain)) {
-		// Walk and observe the iframe if it's the same origin as the page
-		walkAndObserve(iframes[i].contentWindow.document);
-	}
-}
