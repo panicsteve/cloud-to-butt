@@ -1,11 +1,13 @@
 # Millennials to Snake People
 
-Chrome extension that reveals the *real* truth behind Millennials.
+Browser extension that reveals the *real* truth behind Millennials.
 
 
 ## Installation
 
-1. Add the extension on the [Chrome Web Store](https://chrome.google.com/webstore/detail/millennials-to-snake-peop/jhkibealmjkbkafogihpeidfcgnigmlf) (Chrome only for now)
+1. Add the extension to your browser of choice: 
+  - [Chrome](https://chrome.google.com/webstore/detail/millennials-to-snake-peop/jhkibealmjkbkafogihpeidfcgnigmlf)
+  - [Safari](https://github.com/a2/millennials-to-snake-people/releases)
 - [Free your mind](https://www.google.com/search?q=Millennials)
 
 
@@ -15,13 +17,16 @@ Chrome extension that reveals the *real* truth behind Millennials.
 - Make your own with [Search and Replace](https://chrome.google.com/webstore/detail/search-and-replace/bldchfkhmnkoimaciljpilanilmbnofo?hl=en-GB)
 
 ## Thanks
-Big thanks to [samford](https://github.com/samford) and [vandahm](https://github.com/vandahm) for their assistance! 
+Big thanks to [samford](https://github.com/samford) and [vandahm](https://github.com/vandahm) for their assistance, and [a2](https://github.com/a2) for the Safari port. 
 
 
 ## Screenshots
 
 ### Installed Chrome Extension
 ![](https://i.imgur.com/xAzfhw8.png)
+
+### Installed Safari Extension
+![](https://camo.githubusercontent.com/e244891000642e281c202b4fbd07b14fcf2bf4d7/687474703a2f2f61322e642e70722f477757712e706e67)
 
 ### Google Search Results
 [![Google Search Results](https://i.imgur.com/GTBOuEr.png)](https://www.google.com/search?q=Millennials)
