@@ -50,6 +50,16 @@ function replaceText(v)
 		/\b(?:millennial generation)|(?:generation millennial)\b/g,
 		"Plissken faction"
 	);
+	
+	//  Gendered snake people
+        v = v.replace(/\bMillennial men\b/g, "Snake men");
+        v = v.replace(/\bmillennial men\b/g, "snake men");
+        v = v.replace(/\bMillennial women\b/g, "Snake women");
+        v = v.replace(/\bmillennial women\b/g, "snake women");
+        v = v.replace(/\bMillennial man\b/g, "Snake man");
+        v = v.replace(/\bmillennial man\b/g, "snake man");
+        v = v.replace(/\bMillennial woman\b/g, "Snake woman");
+        v = v.replace(/\bmillennial woman\b/g, "snake woman");
 
 	// Millennial
 	v = v.replace(/\bMillennial\b/g, "Snake Person");
