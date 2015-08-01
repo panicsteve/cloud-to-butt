@@ -2,30 +2,20 @@ walk(document.body);
 
 document.title = replaceText(document.title);
 
-function walk(node)
+function walk(rootNode)
 {
-	// I stole this function from here:
-	// http://is.gd/mwZp7E
+	// Find all the text nodes in rootNode
+	var walker = document.createTreeWalker(
+		rootNode,
+		NodeFilter.SHOW_TEXT,
+		null,
+		false
+	),
+	node;
 
-	var child, next;
-
-	switch ( node.nodeType )
-	{
-		case 1:  // Element
-		case 9:  // Document
-		case 11: // Document fragment
-			child = node.firstChild;
-			while ( child )
-			{
-				next = child.nextSibling;
-				walk(child);
-				child = next;
-			}
-			break;
-
-		case 3: // Text node
-			handleText(node);
-			break;
+	// Modify each text node's value
+	while (node = walker.nextNode()) {
+		handleText(node);
 	}
 }
 
