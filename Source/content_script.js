@@ -40,7 +40,7 @@ function replaceText(v)
     // Millennialism
     v = v.replace(/\b(M|m)illennialism?\b/g, "$1illennialism");
 
-    //  Gendered snake people
+    //  Gendered Millennials
     v = v.replace(/\bMillennial Men\b/g, "Snake Men");
     v = v.replace(/\bMillennial men\b/g, "Snake men");
     v = v.replace(/\bmillennial men\b/g, "snake men");
@@ -96,7 +96,7 @@ function replaceText(v)
     v = v.replace(/\bMillennial gals'\b/g, "Snake gals'");
     v = v.replace(/\bmillennial gals'\b/g, "snake gals'");
 
-    //  Aged snake people
+    //  Aged Millennials
     v = v.replace(/\bMillennial Child\b/g, "Snakelet");
     v = v.replace(/\bMillennial child\b/g, "snakelet");
     v = v.replace(/\bmillennial child\b/g, "snakelet");
