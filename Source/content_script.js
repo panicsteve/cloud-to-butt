@@ -37,6 +37,9 @@ function replaceText(v)
         "Plissken faction"
     );
 
+    // Millennialism
+    v = v.replace(/\b(M|m)illennialism?\b/g, "$1illennialism");
+
     //  Gendered snake people
     v = v.replace(/\bMillennial Men\b/g, "Snake Men");
     v = v.replace(/\bMillennial men\b/g, "Snake men");
