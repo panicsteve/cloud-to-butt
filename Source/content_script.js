@@ -96,6 +96,47 @@ function replaceText(v)
     v = v.replace(/\bMillennial gals'\b/g, "Snake gals'");
     v = v.replace(/\bmillennial gals'\b/g, "snake gals'");
 
+    //  Aged snake people
+    v = v.replace(/\bMillennial Child\b/g, "Snakelet");
+    v = v.replace(/\bMillennial child\b/g, "snakelet");
+    v = v.replace(/\bmillennial child\b/g, "snakelet");
+    v = v.replace(/\bMillennial Child's\b/g, "Snakelet's");
+    v = v.replace(/\bMillennial child's\b/g, "snakelet's");
+    v = v.replace(/\bmillennial child's\b/g, "snakelet's");
+    v = v.replace(/\bMillennial Children\b/g, "Snakelets");
+    v = v.replace(/\bMillennial children\b/g, "snakelets");
+    v = v.replace(/\bmillennial children\b/g, "snakelets");
+    v = v.replace(/\bMillennial Children's\b/g, "Snakelets'");
+    v = v.replace(/\bMillennial children's\b/g, "snakelets'");
+    v = v.replace(/\bmillennial children's\b/g, "snakelets'");
+    v = v.replace(/\bMillennial Teen\b/g, "proto-Snake Person");
+    v = v.replace(/\bMillennial teen\b/g, "proto-Snake person");
+    v = v.replace(/\bmillennial teen\b/g, "proto-snake person");
+    v = v.replace(/\bMillennial Teens\b/g, "proto-Snake People");
+    v = v.replace(/\bMillennial teens\b/g, "proto-Snake People");
+    v = v.replace(/\bmillennial teens\b/g, "proto-snake people");
+    v = v.replace(/\bMillennial Teens'\b/g, "proto-Snake people's");
+    v = v.replace(/\bMillennial teens'\b/g, "proto-Snake people's");
+    v = v.replace(/\bmillennial teens'\b/g, "proto-Snake people's");
+    v = v.replace(/\bMillennial Teenager\b/g, "proto-Snake Person");
+    v = v.replace(/\bMillennial teenager\b/g, "proto-Snake person");
+    v = v.replace(/\bmillennial teenager\b/g, "proto-Snake person");
+    v = v.replace(/\bMillennial Teenager's\b/g, "proto-Snake Person's");
+    v = v.replace(/\bMillennial teenager's\b/g, "proto-Snake person's");
+    v = v.replace(/\bmillennial teenager's\b/g, "proto-Snake person's");
+    v = v.replace(/\bMillennial Adult\b/g, "Adult Snake Person");
+    v = v.replace(/\bMillennial adult\b/g, "adult Snake Person");
+    v = v.replace(/\bmillennial adult\b/g, "adult snake person");
+    v = v.replace(/\bMillennial Adult's\b/g, "Adult Snake Person's");
+    v = v.replace(/\bMillennial adult's\b/g, "adult Snake Person's");
+    v = v.replace(/\bmillennial adult's\b/g, "adult snake person's");
+    v = v.replace(/\bMillennial Adults\b/g, "Adult Snake People");
+    v = v.replace(/\bMillennial adults\b/g, "adult Snake People");
+    v = v.replace(/\bmillennial adults\b/g, "adult snake people");
+    v = v.replace(/\bMillennial Adults'\b/g, "Adult Snake People's");
+    v = v.replace(/\bMillennial adults'\b/g, "adult Snake People's");
+    v = v.replace(/\bmillennial adults'\b/g, "adult snake people's");
+
     // Millennial
     v = v.replace(/\bMillennial\b/g, "Snake Person");
     v = v.replace(/\bmillennial\b/g, "snake person");
