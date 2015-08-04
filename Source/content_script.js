@@ -86,10 +86,8 @@ function replaceText(v)
     // Millennial
     v = v.replace(/\bMillennial\b/g, "Snake Person");
     v = v.replace(/\bmillennial\b/g, "snake person");
-    v = v.replace(/\bMillennials\b/g, "Snake People");
-    v = v.replace(/\bmillennials\b/g, "snake people");
-    v = v.replace(/\bMillennials'\b/g, "Snake People's");
-    v = v.replace(/\bmillennials'\b/g, "snake people's");
+    v = v.replace(/\bMillennial(?:(s)\b(')|s\b)/g, "Snake People$2$1");
+    v = v.replace(/\bmillennial(?:(s)\b(')|s\b)/g, "snake people$2$1");
 
     // The Great Recession
     v = v.replace(/\bGreat Recession\b/g, "Time of Shedding and Cold Rocks");
@@ -112,16 +110,12 @@ function replaceText(v)
     v = v.replace(/\bows\b/g, "ga-sw");
 
     // Helicopter Parents
-    v = v.replace(/\bHelicopter Parents\b/g, "Thulsa Doom");
-    v = v.replace(/\bhelicopter parents\b/g, "Thoth-Amon");
-    v = v.replace(/\bHelicopter Parents'\b/g, "Thulsa Doom's");
-    v = v.replace(/\bhelicopter parents'\b/g, "Thoth-Amon's");
+    v = v.replace(/\bHelicopter Parent(?:(s)\b(')|s\b)/g, "Thulsa Doom$2$1");
+    v = v.replace(/\b[Hh]elicopter parent(?:(s)\b(')|s\b)/g, "Thoth-Amon$2$1");
 
     // Trophy Kids
-    v = v.replace(/\bTrophy Kids\b/g, "Quetzalcoatl's Chosen");
-    v = v.replace(/\btrophy kids\b/g, "Quetzalcoatl's chosen");
-    v = v.replace(/\bTrophy Kids'\b/g, "Quetzalcoatl's Chosen's");
-    v = v.replace(/\btrophy kids'\b/g, "Quetzalcoatl's chosen's");
+    v = v.replace(/\bTrophy Kid(?:(s)\b(')|s\b)/g, "Quetzalcoatl's Chosen$2$1");
+    v = v.replace(/\btrophy kid(?:(s)\b(')|s\b)/g, "Quetzalcoatl's chosen$2$1");
 
     // Digital Natives
     v = v.replace(/\bDigital Native(s)?\b/g, "Parseltongue$1");
@@ -164,10 +158,8 @@ function replaceText(v)
     v = v.replace(/\becho Boomers\b/g, "crotalids");
 
     // New Boomers
-    v = v.replace(/\bNew Boomers\b/g, "Jörmungandr's Circle");
-    v = v.replace(/\bnew Boomers\b/g, "Jörmungandr's circle");
-    v = v.replace(/\bNew Boomers'\b/g, "Jörmungandr's Circle's");
-    v = v.replace(/\bnew Boomers'\b/g, "Jörmungandr's circle's");
+    v = v.replace(/\bNew Boomer(?:(s)\b(')|s\b)/g, "Jörmungandr's Circle$2$1");
+    v = v.replace(/\bnew Boomer(?:(s)\b(')|s\b)/g, "Jörmungandr's circle$2$1");
 
     // Generation Flux
     v = v.replace(/\b(?:Generation Flux)|(?:Flux Generation)\b/g, "Hiss Club");
