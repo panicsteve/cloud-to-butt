@@ -38,7 +38,9 @@ function replaceText(v)
     );
 
     // Millennialism
-    v = v.replace(/\b(M|m)illennialism?\b/g, "$1illennialism");
+    v = v.replace(/\bMillennialism?\b/g, "Reptilianism");
+    v = v.replace(/\bmillennialism?\b/g, "reptilianism");
+
 
     //  Gendered Millennials
     v = v.replace(/\bMillennial (M|m)(e|a)n('s)?\b/g, "Snake $1$2n$3");
