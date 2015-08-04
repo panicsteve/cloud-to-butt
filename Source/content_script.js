@@ -41,109 +41,53 @@ function replaceText(v)
     v = v.replace(/\b(M|m)illennialism?\b/g, "$1illennialism");
 
     //  Gendered Millennials
-    v = v.replace(/\bMillennial Men\b/g, "Snake Men");
-    v = v.replace(/\bMillennial men\b/g, "Snake men");
-    v = v.replace(/\bmillennial men\b/g, "snake men");
-    v = v.replace(/\bMillennial Men's\b/g, "Snake Men's");
-    v = v.replace(/\bMillennial men's\b/g, "Snake men's");
-    v = v.replace(/\bmillennial men's\b/g, "snake men's");
-    v = v.replace(/\bMillennial Man\b/g, "Snake man");
-    v = v.replace(/\bMillennial man\b/g, "Snake Man");
-    v = v.replace(/\bmillennial man\b/g, "snake man");
-    v = v.replace(/\bMillennial Man's\b/g, "Snake Man's");
-    v = v.replace(/\bMillennial man's\b/g, "Snake man's");
-    v = v.replace(/\bmillennial man's\b/g, "snake man's");
-    v = v.replace(/\bMillennial Boy\b/g, "Snake Boy");
-    v = v.replace(/\bMillennial boy\b/g, "Snake boy");
-    v = v.replace(/\bmillennial boy\b/g, "snake boy");
-    v = v.replace(/\bMillennial Boys'\b/g, "Snake Boys'");
-    v = v.replace(/\bMillennial boys'\b/g, "Snake boys'");
-    v = v.replace(/\bmillennial boys'\b/g, "snake boys'");
-    v = v.replace(/\bMillennial Guy\b/g, "Snake Guy");
-    v = v.replace(/\bMillennial guy\b/g, "Snake guy");
-    v = v.replace(/\bmillennial guy\b/g, "snake guy");
-    v = v.replace(/\bMillennial Guys\b/g, "Snake Guys");
-    v = v.replace(/\bMillennial guys\b/g, "Snake guys");
-    v = v.replace(/\bmillennial guys\b/g, "snake guys");
-    v = v.replace(/\bMillennial Guys'\b/g, "Snake Guys'");
-    v = v.replace(/\bMillennial guys'\b/g, "Snake guys'");
-    v = v.replace(/\bmillennial guys'\b/g, "snake guys'");
-    v = v.replace(/\bMillennial Women\b/g, "Snake Women");
-    v = v.replace(/\bMillennial women\b/g, "Snake women");
-    v = v.replace(/\bmillennial women\b/g, "snake women");
-    v = v.replace(/\bMillennial Women's\b/g, "Snake Women's");
-    v = v.replace(/\bMillennial women's\b/g, "Snake women's");
-    v = v.replace(/\bmillennial women's\b/g, "snake women's");
-    v = v.replace(/\bMillennial Woman\b/g, "Snake Woman");
-    v = v.replace(/\bMillennial woman\b/g, "Snake woman");
-    v = v.replace(/\bmillennial woman\b/g, "snake woman");
-    v = v.replace(/\bMillennial Woman's\b/g, "Snake Woman's");
-    v = v.replace(/\bMillennial woman's\b/g, "Snake woman's");
-    v = v.replace(/\bmillennial woman's\b/g, "snake woman's");
-    v = v.replace(/\bMillennial Girl\b/g, "Snake Girl");
-    v = v.replace(/\bMillennial girl\b/g, "Snake girl");
-    v = v.replace(/\bmillennial girl\b/g, "snake girl");
-    v = v.replace(/\bMillennial Girl's\b/g, "Snake Girl's");
-    v = v.replace(/\bMillennial girl's\b/g, "Snake girl's");
-    v = v.replace(/\bmillennial girl's\b/g, "snake girl's");
-    v = v.replace(/\bMillennial Gal\b/g, "Snake Gal");
-    v = v.replace(/\bMillennial gal\b/g, "Snake gal");
-    v = v.replace(/\bmillennial gal\b/g, "snake gal");
-    v = v.replace(/\bMillennial Gals\b/g, "Snake Gals");
-    v = v.replace(/\bMillennial gals\b/g, "Snake gals");
-    v = v.replace(/\bmillennial gals\b/g, "snake gals");
-    v = v.replace(/\bMillennial Gals'\b/g, "Snake Gals'");
-    v = v.replace(/\bMillennial gals'\b/g, "Snake gals'");
-    v = v.replace(/\bmillennial gals'\b/g, "snake gals'");
+    v = v.replace(/\bMillennial (M|m)(e|a)n('s)?\b/g, "Snake $1$2n$3");
+    v = v.replace(/\bmillennial m(e|a)n('s)?\b/g, "snake m$1n$2");
+    v = v.replace(/\bMillennial (B|b)oy('s|s(?:')?)?\b/g, "Snake $1oy$2");
+    v = v.replace(/\bmillennial boy('s|s(?:')?)?\b/g, "snake boy$1");
+    v = v.replace(/\bMillennial (G|g)uy('s|s(?:')?)?\b/g, "Snake $1uy$2");
+    v = v.replace(/\bmillennial guy('s|s(?:')?)?\b/g, "snake guy$1");
+    v = v.replace(/\bMillennial (W|w)om(e|a)n('s)?\b/g, "Snake $1om$2n$3");
+    v = v.replace(/\bmillennial wom(e|a)n('s)?\b/g, "snake wom$1n$2");
+    v = v.replace(/\bMillennial (G|g)irl('s|s(?:')?)?\b/g, "Snake $1irl$2");
+    v = v.replace(/\bmillennial girl('s|s(?:')?)?\b/g, "snake girl$1");
+    v = v.replace(/\bMillennial (G|g)al('s|s(?:')?)?\b/g, "Snake $1al$2");
+    v = v.replace(/\bmillennial gal('s|s(?:')?)?\b/g, "snake gal$1");
 
     //  Aged Millennials
-    v = v.replace(/\bMillennial Child\b/g, "Snakelet");
-    v = v.replace(/\bMillennial child\b/g, "snakelet");
-    v = v.replace(/\bmillennial child\b/g, "snakelet");
-    v = v.replace(/\bMillennial Child's\b/g, "Snakelet's");
-    v = v.replace(/\bMillennial child's\b/g, "snakelet's");
-    v = v.replace(/\bmillennial child's\b/g, "snakelet's");
-    v = v.replace(/\bMillennial Children\b/g, "Snakelets");
-    v = v.replace(/\bMillennial children\b/g, "snakelets");
-    v = v.replace(/\bmillennial children\b/g, "snakelets");
-    v = v.replace(/\bMillennial Children's\b/g, "Snakelets'");
-    v = v.replace(/\bMillennial children's\b/g, "snakelets'");
-    v = v.replace(/\bmillennial children's\b/g, "snakelets'");
-    v = v.replace(/\bMillennial Teen\b/g, "proto-Snake Person");
-    v = v.replace(/\bMillennial teen\b/g, "proto-Snake person");
-    v = v.replace(/\bmillennial teen\b/g, "proto-snake person");
-    v = v.replace(/\bMillennial Teens\b/g, "proto-Snake People");
-    v = v.replace(/\bMillennial teens\b/g, "proto-Snake People");
-    v = v.replace(/\bmillennial teens\b/g, "proto-snake people");
-    v = v.replace(/\bMillennial Teens'\b/g, "proto-Snake people's");
-    v = v.replace(/\bMillennial teens'\b/g, "proto-Snake people's");
-    v = v.replace(/\bmillennial teens'\b/g, "proto-Snake people's");
-    v = v.replace(/\bMillennial Teenager\b/g, "proto-Snake Person");
-    v = v.replace(/\bMillennial teenager\b/g, "proto-Snake person");
-    v = v.replace(/\bmillennial teenager\b/g, "proto-Snake person");
-    v = v.replace(/\bMillennial Teenager's\b/g, "proto-Snake Person's");
-    v = v.replace(/\bMillennial teenager's\b/g, "proto-Snake person's");
-    v = v.replace(/\bmillennial teenager's\b/g, "proto-Snake person's");
-    v = v.replace(/\bMillennial Adult\b/g, "Adult Snake Person");
-    v = v.replace(/\bMillennial adult\b/g, "adult Snake Person");
-    v = v.replace(/\bmillennial adult\b/g, "adult snake person");
-    v = v.replace(/\bMillennial Adult's\b/g, "Adult Snake Person's");
-    v = v.replace(/\bMillennial adult's\b/g, "adult Snake Person's");
-    v = v.replace(/\bmillennial adult's\b/g, "adult snake person's");
-    v = v.replace(/\bMillennial Adults\b/g, "Adult Snake People");
-    v = v.replace(/\bMillennial adults\b/g, "adult Snake People");
-    v = v.replace(/\bmillennial adults\b/g, "adult snake people");
-    v = v.replace(/\bMillennial Adults'\b/g, "Adult Snake People's");
-    v = v.replace(/\bMillennial adults'\b/g, "adult Snake People's");
-    v = v.replace(/\bmillennial adults'\b/g, "adult snake people's");
+    v = v.replace(/\bMillennial Child('s)?\b/g, "Snakelet$1");
+    v = v.replace(/\b[Mm]illennial child('s)?\b/g, "snakelet$1");
+    v = v.replace(/\bMillennial Children(?:(')s)?\b/g, "Snakelets$1");
+    v = v.replace(/\b[Mm]illennial children(?:(')s)?\b/g, "snakelets$1");
+    v = v.replace(
+        /\bMillennial [Tt]een(?:ager)?('s)?\b/g,
+        "proto-Snake Person$1"
+    );
+    v = v.replace(/\bmillennial teen(?:ager)?('s)?\b/g, "proto-snake person$1");
+    v = v.replace(
+        /\bMillennial [Tt]een(?:ager)?(?:(s)\b(')|s\b)/g,
+        "proto-Snake People$2$1"
+    );
+    v = v.replace(
+        /\bmillennial teen(?:ager)?(?:(s)\b(')|s\b)/g,
+        "proto-snake people$2$1"
+    );
+    v = v.replace(/\bMillennial (A|a)dult('s)?\b/g, "$1dult Snake Person$2");
+    v = v.replace(/\bmillennial adult('s)?\b/g, "adult snake person$1");
+    v = v.replace(
+        /\bMillennial (A|a)dult(?:(s)\b(')|s\b)/g,
+        "$1dult Snake People$3$2"
+    );
+    v = v.replace(
+        /\bmillennial adult(?:(s)\b(')|s\b)/g,
+        "adult snake people$2$1"
+    );
 
     // Millennial
     v = v.replace(/\bMillennial\b/g, "Snake Person");
     v = v.replace(/\bmillennial\b/g, "snake person");
-    v = v.replace(/\bMillennials\b/g, "Snake People");
-    v = v.replace(/\bmillennials\b/g, "snake people");
-    v = v.replace(/\bMillennials'\b/g, "Snake People's");
-    v = v.replace(/\bmillennials'\b/g, "snake people's");
+    v = v.replace(/\bMillennial(?:(s)\b(')|s\b)/g, "Snake People$2$1");
+    v = v.replace(/\bmillennial(?:(s)\b(')|s\b)/g, "snake people$2$1");
 
     // The Great Recession
     v = v.replace(/\bGreat Recession\b/g, "Time of Shedding and Cold Rocks");
@@ -166,16 +110,12 @@ function replaceText(v)
     v = v.replace(/\bows\b/g, "ga-sw");
 
     // Helicopter Parents
-    v = v.replace(/\bHelicopter Parents\b/g, "Thulsa Doom");
-    v = v.replace(/\bhelicopter parents\b/g, "Thoth-Amon");
-    v = v.replace(/\bHelicopter Parents'\b/g, "Thulsa Doom's");
-    v = v.replace(/\bhelicopter parents'\b/g, "Thoth-Amon's");
+    v = v.replace(/\bHelicopter Parent(?:(s)\b(')|s\b)/g, "Thulsa Doom$2$1");
+    v = v.replace(/\b[Hh]elicopter parent(?:(s)\b(')|s\b)/g, "Thoth-Amon$2$1");
 
     // Trophy Kids
-    v = v.replace(/\bTrophy Kids\b/g, "Quetzalcoatl's Chosen");
-    v = v.replace(/\btrophy kids\b/g, "Quetzalcoatl's chosen");
-    v = v.replace(/\bTrophy Kids'\b/g, "Quetzalcoatl's Chosen's");
-    v = v.replace(/\btrophy kids'\b/g, "Quetzalcoatl's chosen's");
+    v = v.replace(/\bTrophy Kid(?:(s)\b(')|s\b)/g, "Quetzalcoatl's Chosen$2$1");
+    v = v.replace(/\btrophy kid(?:(s)\b(')|s\b)/g, "Quetzalcoatl's chosen$2$1");
 
     // Digital Natives
     v = v.replace(/\bDigital Native(s)?\b/g, "Parseltongue$1");
@@ -218,10 +158,8 @@ function replaceText(v)
     v = v.replace(/\becho Boomers\b/g, "crotalids");
 
     // New Boomers
-    v = v.replace(/\bNew Boomers\b/g, "Jörmungandr's Circle");
-    v = v.replace(/\bnew Boomers\b/g, "Jörmungandr's circle");
-    v = v.replace(/\bNew Boomers'\b/g, "Jörmungandr's Circle's");
-    v = v.replace(/\bnew Boomers'\b/g, "Jörmungandr's circle's");
+    v = v.replace(/\bNew Boomer(?:(s)\b(')|s\b)/g, "Jörmungandr's Circle$2$1");
+    v = v.replace(/\bnew Boomer(?:(s)\b(')|s\b)/g, "Jörmungandr's circle$2$1");
 
     // Generation Flux
     v = v.replace(/\b(?:Generation Flux)|(?:Flux Generation)\b/g, "Hiss Club");
