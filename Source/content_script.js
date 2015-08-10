@@ -38,8 +38,8 @@ function replaceText(v)
     );
 
     // Millennialism
-    v = v.replace(/\bMillennialism?\b/g, "Reptilianism");
-    v = v.replace(/\bmillennialism?\b/g, "reptilianism");
+    v = v.replace(/\bMillennialism\b/g, "Reptilianism");
+    v = v.replace(/\bmillennialism\b/g, "reptilianism");
 
 
     //  Gendered Millennials
