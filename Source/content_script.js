@@ -129,10 +129,6 @@ function replaceText(v)
     v = v.replace(/\bZ Generation\b/g, "Children of the Zolom");
     v = v.replace(/\bz generation\b/g, "children of the Zolom");
 
-    // Baby Boomers
-    v = v.replace(/\bBaby Boomer(?:(s)\b(')|s\b)/g, "Snake people spawner$2$1");
-    v = v.replace(/\bbaby Boomer(?:(s)\b(')|s\b)/g, "snake people spawner$2$1");
-
     // tweens
     v = v.replace(/\bTween(s)?\b/g, "Neonate$1");
     v = v.replace(/\btween(s)?\b/g, "neonate$1");
