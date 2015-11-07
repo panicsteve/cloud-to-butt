@@ -41,7 +41,6 @@ function replaceText(v)
     v = v.replace(/\bMillennialism\b/g, "Reptilianism");
     v = v.replace(/\bmillennialism\b/g, "reptilianism");
 
-
     //  Gendered Millennials
     v = v.replace(/\bMillennial (M|m)(e|a)n('s)?\b/g, "Snake $1$2n$3");
     v = v.replace(/\bmillennial m(e|a)n('s)?\b/g, "snake m$1n$2");
@@ -84,6 +83,10 @@ function replaceText(v)
         /\bmillennial adult(?:(s)\b(')|s\b)/g,
         "adult snake people$2$1"
     );
+
+    // Definition
+    v = v.replace(/\bmil·len·nial\b/g, "snake peo·ple");
+    v = v.replace(/\bmiˈlenēəl\b/g, "snāk ˈpēpəl");
 
     // Millennial
     v = v.replace(/\bMillennial\b/g, "Snake Person");
