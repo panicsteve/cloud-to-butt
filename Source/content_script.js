@@ -127,7 +127,7 @@ function replaceText(v)
     v = v.replace(/\bdigital native(s)?\b/g, "parseltongue$1");
 
     // Generation Z
-    v = v.replace(/\bGeneration Z)\b/g, "The Zolom's children");
+    v = v.replace(/\bGeneration Z\b/g, "The Zolom's Children");
     v = v.replace(/\bgeneration Z\b/g, "the Zolom's children");
     v = v.replace(/\bZ Generation\b/g, "Children of the Zolom");
     v = v.replace(/\bz generation\b/g, "children of the Zolom");
