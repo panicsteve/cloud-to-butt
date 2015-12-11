@@ -1,9 +1,9 @@
-cloud-to-butt
+ssl-to-tls
 =============
 
 ![](logo.png)
 
-Chrome extension that replaces occurrences of 'the cloud' with 'my butt'
+Chrome extension that replaces occurrences of ' SSL ' with ' TLS '
 
 [Direct download of crx file](https://github.com/panicsteve/cloud-to-butt/blob/master/CloudToButt.crx?raw=true)
 
