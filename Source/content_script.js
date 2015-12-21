@@ -208,6 +208,12 @@ function replaceText(v)
     v = v.replace(/\b9\/?11 Generation\b/g, "Tribe of the Kaa");
     v = v.replace(/\b9\/?11 generation\b/g, "tribe of the Kaa");
 
+    // Cohorts
+    v = v.replace(/\b(S|s)truggling (A|a)spirationals\b/g, "Struggling (with) Pythons");
+    v = v.replace(/\b(S|s)uccessful (H|h)omeowners\b/g, "Viper Stripers");
+    v = v.replace(/\b(A|a)ctive (A|a)ffluents\b/g, "Activated Boas");
+    v = v.replace(/\b(C|c)omfortable (?:tv|Tv|TV) (W|w)atchers\b/g, "Cozy Cobras");
+
     // The Generation of €700
     v = v.replace(
         /\b(?:The Generation of €700)|(?:€700 Generation)\b/g,
