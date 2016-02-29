@@ -9,7 +9,7 @@ function walk(node)
 	
 	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
 	    || node.classList.indexOf('ace_editor') > -1) {
-		break;
+		return;
 	}
 
 	switch ( node.nodeType )  
