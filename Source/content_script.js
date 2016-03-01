@@ -1,4 +1,6 @@
-walk(document.body);
+document.addEventListener("DOMNodeInserted", function(e) {
+  walk(document.body);
+}, false);
 
 function walk(node) 
 {
