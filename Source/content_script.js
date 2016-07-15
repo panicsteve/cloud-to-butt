@@ -2,6 +2,7 @@ walk(document.body);
 
 function walk(node) 
 {
+	//I then stole it from Cloud to Butt - Dan
 	// I stole this function from here:
 	// http://is.gd/mwZp7E
 	
@@ -36,10 +37,11 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	v = v.replace(/\bMike Pence\b/g, "Dark Lord Pence");
+	v = v.replace(/\bPence\b/g, "Lord Pence");
+	v = v.replace(/\bGovernor Mike Pence\b/g, "Dark Lord of the Sith, Darth Pence,");
+	v = v.replace(/\bGovernor Pence\b/g, "Darth Pence");
+	v = v.replace(/\bVice Presidential Candidate Mike Pence\b/g, "Sith Apprentice to Donald Trump, Darth Pence,");
 	
 	textNode.nodeValue = v;
 }
