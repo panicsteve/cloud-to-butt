@@ -1,4 +1,7 @@
-walk(document.body);
+// Nick - You have to wait until the body actually is loaded.
+setTimeout(function() {
+	walk(document.body);
+}, 1000)
 
 function walk(node) 
 {
@@ -8,10 +11,12 @@ function walk(node)
 	
 	var child, next;
 	
+	/*
+	Nick - Not sure what this bit of code does.
 	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
 	    || node.classList.indexOf('ace_editor') > -1) {
 		return;
-	}
+	}*/
 
 	switch ( node.nodeType )  
 	{
