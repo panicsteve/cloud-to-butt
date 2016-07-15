@@ -38,10 +38,11 @@ function handleText(textNode)
 	var v = textNode.nodeValue;
 
 	v = v.replace(/\bMike Pence\b/g, "Dark Lord Pence");
+	v = v.replace(/\bIndiana Gov. Mike Pence\b/g, "Corn Imperator Pence");
 	v = v.replace(/\bPence\b/g, "Lord Pence");
 	v = v.replace(/\bGovernor Mike Pence\b/g, "Dark Lord of the Sith, Darth Pence,");
 	v = v.replace(/\bGovernor Pence\b/g, "Darth Pence");
-	v = v.replace(/\bVice Presidential Candidate Mike Pence\b/g, "Sith Apprentice to Donald Trump, Darth Pence,");
+	v = v.replace(/\bVice Presidential Candidate Mike Pence\b/g, "Sith Apprentice to Donald Trump, Darth Pence, ");
 	
 	textNode.nodeValue = v;
 }
