@@ -5,6 +5,8 @@ cloud-to-butt
 
 Chrome extension that replaces occurrences of 'the cloud' with 'my butt'
 
+Now with meme references: 'big data' becomes 'what what'.
+
 [Direct download of crx file](https://github.com/panicsteve/cloud-to-butt/blob/master/CloudToButt.crx?raw=true)
 
 Note that there are forks of this extension that simply replace 'cloud' with 'butt'.

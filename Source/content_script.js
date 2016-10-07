@@ -40,6 +40,10 @@ function handleText(textNode)
 	v = v.replace(/\bThe cloud\b/g, "My butt");
 	v = v.replace(/\bthe Cloud\b/g, "my Butt");
 	v = v.replace(/\bthe cloud\b/g, "my butt");
+    v = v.replace(/\bBig Data\b/g, "What What");
+    v = v.replace(/\bBig data\b/g, "What what");
+    v = v.replace(/\bbig Data\b/g, "what What");
+    v = v.replace(/\bbig data\b/g, "what what");
 	
 	textNode.nodeValue = v;
 }
