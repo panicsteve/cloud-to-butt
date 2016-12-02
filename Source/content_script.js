@@ -41,6 +41,12 @@ function handleText(textNode)
 	v = v.replace(/\bthe Cloud\b/g, "my Butt");
 	v = v.replace(/\bthe cloud\b/g, "my butt");
 	
+	v = v.replace(/\bTHE CLOUD\b/g, "MY BUTT");
+	
+	v = v.replace(/\bcloud\b/g, "butt");
+	v = v.replace(/\bCloud\b/g, "Butt");
+	v = v.replace(/\bCLOUD\b/g, "BUTT");
+	
 	textNode.nodeValue = v;
 }
 
