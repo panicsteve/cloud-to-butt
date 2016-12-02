@@ -1,3 +1,32 @@
+String.prototype.buttize = function () {    
+    var translations = [
+		['the cloud', 'my butt'],
+		['The cloud', 'My butt'],
+		['The Cloud', 'My Butt'], 
+		['the Cloud', 'my Butt'],
+		['THE CLOUD', 'MY BUTT'],
+		['the CLOUD', 'my BUTT'],
+		['The CLOUD', 'My BUTT'],
+
+		['thecloud', 'mybutt'],
+		['Thecloud', 'Mybutt'],
+		['TheCloud', 'MyButt'], 
+		['theCloud', 'myButt'],
+		['THECLOUD', 'MYBUTT'],
+		['theCLOUD', 'myBUTT'],
+		['TheCLOUD', 'MyBUTT'],
+
+		['cloud', "butt"],
+		['Cloud', "Butt"],
+		['CLOUD', "BUTT"]
+	];
+	
+	var v = this;
+	for(var key in translations)
+		v = v.replace(new RegExp( translations[key][0], 'g' ), translations[key][1] );
+    return v;
+};
+
 walk(document.body);
 
 function walk(node) 
@@ -27,21 +56,7 @@ function walk(node)
 			break;
 
 		case 3: // Text node
-			handleText(node);
+			node.nodeValue = node.nodeValue.buttize();
 			break;
 	}
 }
-
-function handleText(textNode) 
-{
-	var v = textNode.nodeValue;
-
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
-	
-	textNode.nodeValue = v;
-}
-
-
