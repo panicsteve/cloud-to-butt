@@ -13,7 +13,7 @@ In Chrome, choose Window > Extensions.  Drag RefugeeToRobot.crx into the page th
 Safari Version
 --------------
 
-tba
+Can be found here: https://github.com/tobiasheim/refugee-to-robot-safari
 
 Firefox Version
 ---------------
