@@ -42,20 +42,19 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/Migranten\b/g, "Roboter");
-  v = v.replace(/\bmigranten\b/g, "Roboter");
-	v = v.replace(/Migrant\b/g, "Roboter");
-  v = v.replace(/\bmigrant\b/g, "Roboter");
+	v = v.replace(/Migranten/g, "Roboter");
+  v = v.replace(/migranten/g, "roboter");
+	v = v.replace(/Migrant/g, "Roboter");
+  v = v.replace(/migrant/g, "roboter");
   v = v.replace(/Flüchtlings/g, "Roboter");
   v = v.replace(/flüchtlings/g, "roboter");
-  v = v.replace(/Flüchtlinge\b/g, "Roboter");
-  v = v.replace(/flüchtlinge/g, "roboter");
-  v = v.replace(/Flüchtling\b/g, "Roboter");
-  v = v.replace(/flüchtling/g, "roboter");
-  v = v.replace(/\bRefugees\b/g, "robots");
-  v = v.replace(/\brefugees\b/g, "robots");
-  v = v.replace(/\bRefugee\b/g, "robot");
-  v = v.replace(/\brefugee\b/g, "robot");
+  v = v.replace(/Flüchtlinge/g, "Roboter");
+  v = v.replace(/flüchtlinge/g, "Roboter");
+  v = v.replace(/Flüchtling/g, "Roboter");
+  v = v.replace(/flüchtling/g, "Roboter");
+  v = v.replace(/Refugees/g, "Robots");
+  v = v.replace(/refugees/g, "robots");
+  v = v.replace(/Refugee/g, "Robot");
   v = v.replace(/refugee/g, "robot");
 
   textNode.nodeValue = v;
