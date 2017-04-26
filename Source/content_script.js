@@ -42,15 +42,15 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bMigranten\b/g, "Roboter");
+	v = v.replace(/Migranten\b/g, "Roboter");
   v = v.replace(/\bmigranten\b/g, "Roboter");
-	v = v.replace(/\bMigrant\b/g, "Roboter");
+	v = v.replace(/Migrant\b/g, "Roboter");
   v = v.replace(/\bmigrant\b/g, "Roboter");
-  v = v.replace(/\bFlüchtlings/g, "Roboter");
+  v = v.replace(/Flüchtlings/g, "Roboter");
   v = v.replace(/flüchtlings/g, "roboter");
-  v = v.replace(/\bFlüchtlinge\b/g, "Roboter");
+  v = v.replace(/Flüchtlinge\b/g, "Roboter");
   v = v.replace(/flüchtlinge/g, "roboter");
-  v = v.replace(/\bFlüchtling\b/g, "Roboter");
+  v = v.replace(/Flüchtling\b/g, "Roboter");
   v = v.replace(/flüchtling/g, "roboter");
   v = v.replace(/\bRefugees\b/g, "robots");
   v = v.replace(/\brefugees\b/g, "robots");
