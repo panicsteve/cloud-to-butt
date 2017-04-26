@@ -3,7 +3,7 @@ refugee-to-robot
 
 Chrome extension die Wörter wie "Migranten" und "Flüchtling" durch "Roboter" ersetzt.
 
-[Direct download of crx file](https://github.com/steam0r/refugge-to-robot/RefugeeToRobot.crx?raw=true)
+[Direct download of crx file](https://github.com/steam0r/blob/master/refugge-to-robot/RefugeeToRobot.crx?raw=true)
 
 Installation
 ------------
