@@ -134,8 +134,8 @@ function replaceText(v)
 
     // tweens
     // The replacement syntax here emulates a negative lookbehind to avoid replacing `'tween`
-    v = v.replace( /(')?\bTween/g, function ($0, $1) { return ($1 ? $0 : "Neonate") });
-    v = v.replace( /(')?\btween/g, function ($0, $1) { return ($1 ? $0 : "neonate") });
+    v = v.replace( /(')?\bTween(s)?\b/g, function ($0, $1, $2) { return ($1 ? $0 : $2 ? "Neonates" : "Neonate") });
+    v = v.replace( /(')?\btween(s)?\b/g, function ($0, $1, $2) { return ($1 ? $0 : $2 ? "neonates" : "neonate") });
 
 
     // Generation Y
