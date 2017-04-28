@@ -133,8 +133,10 @@ function replaceText(v)
     v = v.replace(/\bz generation\b/g, "children of the Zolom");
 
     // tweens
-    v = v.replace(/\bTween(s)?\b/g, "Neonate$1");
-    v = v.replace(/\btween(s)?\b/g, "neonate$1");
+    // The replacement syntax here emulates a negative lookbehind to avoid replacing `'tween`
+    v = v.replace( /(')?\bTween/g, function ($0, $1) { return ($1 ? $0 : "Neonate") });
+    v = v.replace( /(')?\btween/g, function ($0, $1) { return ($1 ? $0 : "neonate") });
+
 
     // Generation Y
     v = v.replace(/\b(?:Generation Y)|(?:Generation Why)\b/g,
