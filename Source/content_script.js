@@ -132,11 +132,10 @@ function replaceText(v)
     v = v.replace(/\bZ Generation\b/g, "Children of the Zolom");
     v = v.replace(/\bz generation\b/g, "children of the Zolom");
 
-    // tweens
+    // Tweens
     // The replacement syntax here emulates a negative lookbehind to avoid replacing `'tween`
     v = v.replace( /(')?\bTween(s)?\b/g, function ($0, $1, $2) { return ($1 ? $0 : $2 ? "Neonates" : "Neonate") });
     v = v.replace( /(')?\btween(s)?\b/g, function ($0, $1, $2) { return ($1 ? $0 : $2 ? "neonates" : "neonate") });
-
 
     // Generation Y
     v = v.replace(/\b(?:Generation Y)|(?:Generation Why)\b/g,
@@ -242,18 +241,30 @@ function replaceText(v)
     return v;
 }
 
+// Returns true if a node should *not* be altered in any way
+function isForbiddenNode(node) {
+    return node.isContentEditable || // DraftJS and many others
+    (node.parentNode && node.parentNode.isContentEditable) || // Special case for Gmail
+    (node.tagName && (node.tagName.toLowerCase() == "textarea" || // Some catch-alls
+                     node.tagName.toLowerCase() == "input"));
+}
+
 // The callback used for the document body and title observers
 function observerCallback(mutations) {
-    var i;
+    var i, node;
 
     mutations.forEach(function(mutation) {
         for (i = 0; i < mutation.addedNodes.length; i++) {
-            if (mutation.addedNodes[i].nodeType === 3) {
+            node = mutation.addedNodes[i];
+            if (isForbiddenNode(node)) {
+                // Should never operate on user-editable content
+                continue;
+            } else if (node.nodeType === 3) {
                 // Replace the text for text nodes
-                handleText(mutation.addedNodes[i]);
+                handleText(node);
             } else {
                 // Otherwise, find text nodes within the given node and replace text
-                walk(mutation.addedNodes[i]);
+                walk(node);
             }
         }
     });
