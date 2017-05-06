@@ -132,7 +132,7 @@ function replaceText(v)
     v = v.replace(/\bZ Generation\b/g, "Children of the Zolom");
     v = v.replace(/\bz generation\b/g, "children of the Zolom");
 
-    // tweens
+    // Tweens
     v = v.replace(/\bTween(s)?\b/g, "Neonate$1");
     v = v.replace(/\btween(s)?\b/g, "neonate$1");
 
