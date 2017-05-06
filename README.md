@@ -32,7 +32,7 @@ Huge thank you to the following people for their help:
 - DraftJSapocalypse 
     - [flarnie](https://github.com/flarnie)
     - [drewski3420](https://github.com/drewski3420)
-    - [https://github.com/hguiney](https://github.com/hguiney)
+    - [hguiney](https://github.com/hguiney)
     - [redbassett](https://github.com/redbassett)
     - [roshkins](https://github.com/roshkins)
     - [SnoopJeDi](https://github.com/SnoopJeDi)
