@@ -20,23 +20,40 @@ Browser extension that reveals the *real* truth behind Millennials.
 
 
 ## Thanks
-Big thanks to [samford](https://github.com/samford) and [vandahm](https://github.com/vandahm) for their assistance, and [a2](https://github.com/a2) and [pselle](https://github.com/pselle) for the Safari and Firefox ports. 
+
+Huge thank you to the following people for their help:
+
+- Ports
+    - [a2](https://github.com/a2) for the Safari port
+    - [pselle](https://github.com/pselle) for the Firefox port
+- Assistance and advice
+    - [samford](https://github.com/samford) 
+    - [vandahm](https://github.com/vandahm)
+- DraftJSapocalypse 
+    - [flarnie](https://github.com/flarnie)
+    - [drewski3420](https://github.com/drewski3420)
+    - [https://github.com/hguiney](https://github.com/hguiney)
+    - [redbassett](https://github.com/redbassett)
+    - [roshkins](https://github.com/roshkins)
+    - [SnoopJeDi](https://github.com/SnoopJeDi)
+    - [spicyj](https://github.com/spicyj)
+
 
 ## How to disable
 
-Don't worry! The extension can be re-enabled after ~~it destroys your blog post~~ being disabled.
+Don't worry! The extension can be re-enabled after ~~it destroys your blog post~~ it is disabled.
 
 ### Chrome
 
-Preferences > Extensions > Uncheck "Enable"
+`Preferences` > `Extensions` > Uncheck `Enable`
 
 ### Firefox
 
-Tools > Add-ons > Extensions > Click "Disable"
+`Tools` > `Add-ons` > `Extensions` > Click `Disable`
 
 ### Safari
 
-Preferences > Extensions > Uncheck checkbox next to "Millennials to Snake People"
+`Preferences` > `Extensions` > Uncheck checkbox next to `Millennials to Snake People`
 
 
 ## Screenshots
