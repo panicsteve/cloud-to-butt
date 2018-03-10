@@ -9,7 +9,7 @@
 
 - Text replacement is aggressive and does not discriminate on what domains it runs on
 - More than just the term "millennials" gets replaced
-- There is a a lack of a glossary, even though terms are well documented in [the source](https://github.com/ericwbailey/millennials-to-snake-people/blob/master/Source/content_script.js)
+- There is a lack of a glossary, even though terms are well documented in [the source](https://github.com/ericwbailey/millennials-to-snake-people/blob/master/Source/content_script.js)
 - I'll sometimes allow new terms, but not on any given schedule or via any published criteria
 - There is no indication that the extension is running other than text has been replaced
 - There is no count of how many words have been changed, either on a given page or historically
