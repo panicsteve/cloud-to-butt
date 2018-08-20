@@ -173,6 +173,10 @@ function replaceText(v)
     v = v.replace(/\bEcho Boomers\b/g, "Crotalids");
     v = v.replace(/\becho Boomers\b/g, "crotalids");
 
+    // Parennials
+    v = v.replace(/\bParennial\b/g, "Clutchmaster");
+    v = v.replace(/\bParennial\b/g, "clutchmaster");
+
     // New Boomers
     v = v.replace(/\bNew Boomer(?:(s)\b(')|s\b)/g, "Jörmungandr's Circle$2$1");
     v = v.replace(/\bnew Boomer(?:(s)\b(')|s\b)/g, "Jörmungandr's circle$2$1");
