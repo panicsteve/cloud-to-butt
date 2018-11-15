@@ -242,6 +242,9 @@ function replaceText(v)
         "gargouille"
     );
 
+    // Foodmood: https://twitter.com/drewtoothpaste/status/1062721114953187328
+    v = v.replace(/\b(?:F|f)oodmood\b/g, "hunger");
+
     return v;
 }
 
