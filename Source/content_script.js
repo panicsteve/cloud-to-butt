@@ -104,12 +104,8 @@ function replaceText(v)
 
     // Occupy Wall Street
     v = v.replace(
-        /\b(?:(?:Occupy|OWS) (?:M|m)ovement)|(?:Occupy Wall Street)\b/g,
-        "Great Ape-Snake War"
-    );
-    v = v.replace(
-        /\b(?:(?:occupy|OWS|ows) movement)|(?:occupy wall street)\b/g,
-        "great ape-snake war"
+        /\b(?:the )?(?:(?:(?:occupy|ows) movement)|(?:occupy wall (?:street|st\.?)(?: movement)?))(?!\w)/gi,
+        "The Great Ape-Snake War"
     );
     v = v.replace(/\bOWS\b/g, "GA-SW");
     v = v.replace(/\bows\b/g, "ga-sw");
