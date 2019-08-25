@@ -7,8 +7,11 @@ function walk(node)
 	
 	var child, next;
 	
-	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
-	    || node.classList.indexOf('ace_editor') > -1) {
+	var tagName = node.tagName ? node.tagName.toLowerCase() : "";
+	if (tagName == 'input' || tagName == 'textarea') {
+		return;
+	}
+	if (node.classList && node.classList.contains('ace_editor')) {
 		return;
 	}
 
