@@ -50,6 +50,11 @@ function handleText(textNode)
 	v = v.replace(/\bstudentem\b/g, "debilem");
 	v = v.replace(/\bstudencie\b/g, "debilu");
 	
+	v = v.replace(/\bStudent\b/g, "Debil");
+	v = v.replace(/\bStudenta\b/g, "Debila");
+	v = v.replace(/\bStudentowi\b/g, "Debilowi");
+	v = v.replace(/\bStudentem\b/g, "Debilem");
+	v = v.replace(/\bStudencie\b/g, "Debilu");
 	
 	textNode.nodeValue = v;
 }
