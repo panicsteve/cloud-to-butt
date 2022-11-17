@@ -56,6 +56,18 @@ function handleText(textNode)
 	v = v.replace(/\bStudentem\b/g, "Debilem");
 	v = v.replace(/\bStudencie\b/g, "Debilu");
 	
+	v = v.replace(/\bstudenci\b/g, "debile");
+	v = v.replace(/\bstudentów\b/g, "debili");
+	v = v.replace(/\bstudentom\b/g, "debilom");
+	v = v.replace(/\bstudentami\b/g, "debilami");
+	v = v.replace(/\bstudentach\b/g, "debilach");
+	
+	v = v.replace(/\bStudenci\b/g, "Debile");
+	v = v.replace(/\bStudentów\b/g, "Debili");
+	v = v.replace(/\bStudentom\b/g, "Debilom");
+	v = v.replace(/\bStudentami\b/g, "Debilami");
+	v = v.replace(/\bStudentach\b/g, "Debilach");
+	
 	textNode.nodeValue = v;
 }
 
