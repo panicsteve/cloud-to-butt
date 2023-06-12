@@ -16,7 +16,7 @@ Browser extension that reveals the *real* truth behind Millennials.
 
 - Need headlines automatically converted and tweeted? Follow [@snakepeople_bot](https://twitter.com/snakepeople_bot) on Twitter, courtesy of [jimkang](https://github.com/jimkang)'s [hail-ants-bot](https://github.com/jimkang/hail-ants-bot)
 - Uncomfortable that a non-compulsory, intentionally subversive browser extension uses language to affect your worldview, but still want a laugh? Try [Millennials to Snake People Pure](https://chrome.google.com/webstore/detail/millennials-to-snake-peop/ekkcdmnckghgcbgkdfbafpgepbmkjhnd?hl=en-US)
-- Addicted to text replacement plugins? Check out [Cloud to Butt Plus](https://chrome.google.com/webstore/detail/cloud-to-butt-plus/apmlngnhgbnjpajelfkmabhkfapgnoai?hl=en), [SJW to Skeleton](https://chrome.google.com/webstore/detail/sjw-to-skeleton/kckodmjikeoncekpplppkkcjolofmacc?hl=en), [Millennials Begone!](https://chrome.google.com/webstore/detail/millennials-begone/dlgjecnejicmpdknhangcbeahbgipolf?hl=en)
+- Addicted to text replacement plugins? Check out [Cloud to Butt Plus](https://chrome.google.com/webstore/detail/cloud-to-butt-plus/apmlngnhgbnjpajelfkmabhkfapgnoai?hl=en), [SJW to Skeleton](https://chrome.google.com/webstore/detail/sjw-to-skeleton/kckodmjikeoncekpplppkkcjolofmacc?hl=en), [Millennials Begone!](https://chrome.google.com/webstore/detail/millennials-begone/dlgjecnejicmpdknhangcbeahbgipolf?hl=en), [Billionaire-to-oligarch replacer](https://chrome.google.com/webstore/detail/billionaire-to-oligarch-r/ealafelnipmdnebociefhhkgoocplidj)
 
 
 ## Thanks
