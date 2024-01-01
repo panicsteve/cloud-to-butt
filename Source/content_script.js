@@ -1,16 +1,16 @@
 function walk(rootNode)
 {
     // Find all the text nodes in rootNode
-    var walker = document.createTreeWalker(
+    const walker = document.createTreeWalker(
         rootNode,
         NodeFilter.SHOW_TEXT,
         null,
         false
-    ),
-    node;
+    );
+    let node;
 
     // Modify each text node's value
-    while (node = walker.nextNode()) {
+    while ((node = walker.nextNode())) {
         handleText(node);
     }
 }
@@ -127,6 +127,8 @@ function replaceText(v)
     v = v.replace(/\bgeneration Z\b/g, "the Zolom's children");
     v = v.replace(/\bZ Generation\b/g, "Children of the Zolom");
     v = v.replace(/\bz generation\b/g, "children of the Zolom");
+
+    v = v.replace(/\b[G|g]en [Z|z]\b/g, "Zolom's kids");
 
     // Tweens
     // The replacement syntax here emulates a negative lookbehind to avoid replacing `'tween`
@@ -254,7 +256,8 @@ function isForbiddenNode(node) {
 
 // The callback used for the document body and title observers
 function observerCallback(mutations) {
-    var i, node;
+    let i;
+    let node;
 
     mutations.forEach(function(mutation) {
         for (i = 0; i < mutation.addedNodes.length; i++) {
@@ -275,26 +278,29 @@ function observerCallback(mutations) {
 
 // Walk the doc (document) body, replace the title, and observe the body and title
 function walkAndObserve(doc) {
-    var docTitle = doc.getElementsByTagName('title')[0],
-    observerConfig = {
+    const observers = {
+      title: undefined,
+      body: undefined,
+    };
+    const docTitle = doc.getElementsByTagName('title')[0]
+    const observerConfig = {
         characterData: true,
         childList: true,
         subtree: true
-    },
-    bodyObserver, titleObserver;
+    };
 
     // Do the initial text replacements in the document body and title
     walk(doc.body);
     doc.title = replaceText(doc.title);
 
     // Observe the body so that we replace text in any added/modified nodes
-    bodyObserver = new MutationObserver(observerCallback);
-    bodyObserver.observe(doc.body, observerConfig);
+    observers.body = new MutationObserver(observerCallback);
+    observers.body.observe(doc.body, observerConfig);
 
     // Observe the title so we can handle any modifications there
     if (docTitle) {
-        titleObserver = new MutationObserver(observerCallback);
-        titleObserver.observe(docTitle, observerConfig);
+        observers.title = new MutationObserver(observerCallback);
+        observers.title.observe(docTitle, observerConfig);
     }
 }
-walkAndObserve(document);
+const observers = walkAndObserve(document);
